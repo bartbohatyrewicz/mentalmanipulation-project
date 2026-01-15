@@ -24,5 +24,3 @@ python train.py --config configs/config.yaml --no-plots
 
 
 tensorboard --logdir outputs/logs
-
->>>>>>> 70c6c2e (Readme)
