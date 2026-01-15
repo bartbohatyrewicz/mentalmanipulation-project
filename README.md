@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # mentalmanipulation-project
-=======
-# mentalmanipulation-project
-
 
 
 pip install -r requirements.txt
