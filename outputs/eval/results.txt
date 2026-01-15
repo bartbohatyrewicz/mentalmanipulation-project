@@ -1,0 +1,24 @@
+MentalManip Evaluation Results
+
+Binary Classification:
+  Accuracy: 0.7788
+  F1 Score: 0.8627
+
+Multi-label Classification:
+  Techniques Micro F1: 0.3503
+  Techniques Macro F1: 0.1450
+  Vulnerabilities Micro F1: 0.1256
+  Vulnerabilities Macro F1: 0.0793
+
+Per-Technique F1:
+  Shaming or Belittlement: 0.573 (n=246)
+  Accusation: 0.549 (n=260)
+  Persuasion or Seduction: 0.473 (n=335)
+  Denial: 0.000 (n=95)
+  Evasion: 0.000 (n=109)
+  Feigning Innocence: 0.000 (n=84)
+  Rationalization: 0.000 (n=199)
+  Playing the Victim Role: 0.000 (n=0)
+  Playing the Servant Role: 0.000 (n=0)
+  Brandishing Anger: 0.000 (n=132)
+  Intimidation: 0.000 (n=166)

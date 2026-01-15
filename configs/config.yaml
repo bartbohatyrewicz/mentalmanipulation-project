@@ -1,0 +1,52 @@
+data:
+  dataset_name: "audreyeleven/MentalManip"
+  dataset_config: "mentalmanip_detailed"
+  test_size: 0.2
+  seed: 42
+  max_length: 512
+
+model:
+  backbone: "microsoft/deberta-v3-base"
+  dropout: 0.3
+  use_manip_head: true
+
+training:
+  learning_rate: 2.0e-5
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  num_epochs: 4
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  lr_scheduler: "cosine"
+  early_stopping_patience: 2
+
+llm:
+  model_id: "Qwen/Qwen2.5-7B-Instruct"
+  load_in_4bit: true
+  max_new_tokens: 64
+  num_eval_samples: 20
+
+output:
+  model_dir: "outputs/model"
+  logs_dir: "outputs/logs"
+  plots_dir: "outputs/plots"
+
+techniques:
+  - "Denial"
+  - "Evasion"
+  - "Feigning Innocence"
+  - "Rationalization"
+  - "Playing the Victim Role"
+  - "Playing the Servant Role"
+  - "Shaming or Belittlement"
+  - "Brandishing Anger"
+  - "Intimidation"
+  - "Accusation"
+  - "Persuasion or Seduction"
+
+vulnerabilities:
+  - "Over-responsibility"
+  - "Over-intellectualization"
+  - "Emotional Dependency"
+  - "Naivete"
+  - "Low self-esteem"
